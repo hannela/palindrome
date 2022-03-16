@@ -17,6 +17,10 @@ public class PalindromeChecker {
      * @return true if the string is a palindrome, false otherwise
      */
     public static boolean isPalindrome(String s) {
+        String reverse = new StringBuilder(s).reverse().toString();
+        if (s.equals(reverse)) {
+            return true;
+        }
         return false;
     }
 }
